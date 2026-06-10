@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install wiki CLI
-        run: pip install wazootech-wiki
+        run: pip install "git+https://github.com/wazootech/wiki.git@main"
 
       - name: Regenerate Turtle export
         run: bash scripts/export-graph.sh

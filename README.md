@@ -9,7 +9,7 @@ Explore [Wiki CLI](https://github.com/wazootech/wiki) vault RDF with [YASGUI](ht
 ```bash
 git clone https://github.com/wazootech/wiki-sparql-sandbox.git
 cd wiki-sparql-sandbox
-pip install wazootech-wiki
+pip install wazootech-wiki  # or: pip install git+https://github.com/wazootech/wiki.git@main
 bash scripts/export-graph.sh
 ```
 

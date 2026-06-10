@@ -12,7 +12,6 @@ mkdir -p "$(dirname "${OUT}")"
 
 wiki -c "${CONFIG}" query \
   "CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }" \
-  -f turtle \
-  -o "${OUT}"
+  -f turtle > "${OUT}"
 
 echo "Wrote ${OUT}"
