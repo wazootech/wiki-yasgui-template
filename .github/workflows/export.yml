@@ -25,7 +25,7 @@ jobs:
         run: bash scripts/export-graph.sh
 
       - name: Wiki check (sample vault)
-        run: wiki -c sample/wiki.yaml check
+        run: wiki -c sample/wiki.yml check
 
       - name: Commit updated vault.ttl
         run: |
