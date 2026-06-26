@@ -16,5 +16,5 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install wazootech-wiki
-      - run: wiki -c sample/wiki.yaml check --strict -v
-      - run: wiki -c sample/wiki.yaml lint --strict -v
+      - run: wiki -c sample/wiki.yml check --strict -v
+      - run: wiki -c sample/wiki.yml lint --strict -v
