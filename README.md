@@ -147,3 +147,13 @@ After forking, enable **Settings → Pages → Source: GitHub Actions**, then pu
 - [Wiki CLI](https://github.com/wazootech/wiki)
 - [SPARQL sandbox docs](https://github.com/wazootech/wiki/blob/main/docs/wiki/SPARQL_Sandbox.md)
 - [wiki serve SPARQL endpoint](https://github.com/wazootech/wiki/blob/main/docs/wiki/Wiki_Subcommand_serve.md#sparql-endpoint)
+
+## Alternative hosting
+
+Beyond GitHub Pages, the static export works on any provider:
+
+- **Vercel:** Import the repo, build command \pip install wazootech-wiki && bash scripts/export-graph.sh\, output directory \.\, deploy
+- **Netlify:** Same build command, publish directory \.\
+- **Cloudflare Pages:** Same build command, output directory \.\
+
+For live SPARQL mode, use \wiki serve -c sample/wiki.yaml\ on your server and point YASGUI at the endpoint.
