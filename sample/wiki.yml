@@ -15,10 +15,3 @@ graph:
 sparql_service:
   enabled: true
   path: /api/sparql
-
-link:
-  style: markdown
-
-lint:
-  broken_links: warning
-  filename_pattern: warning
